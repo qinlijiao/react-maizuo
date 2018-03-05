@@ -1,0 +1,107 @@
+header#myhead{
+	height: 50px;
+	background: #282828;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 11;
+}
+header#myhead p{
+	color: #efefef;
+	border-left: 2px solid #323232;
+	line-height: 50px;
+	padding-left: 13px;
+	flex: 1;
+}
+header#myhead i{
+	color: #999;
+}
+header#myhead i.icon-caidan{
+	width: 47px;
+	text-align: center;
+	border-right: 1px solid #222;
+	line-height: 100%;
+}
+header#myhead span{
+	color: #999;
+	padding-right: 6px;
+}
+header#myhead i.icon-xialacaidan{
+	padding-right: 25px;
+}
+header#myhead i.icon-womorenzhuangtai{
+	padding-right: 17px;
+}
+/*菜单*/
+.menu{
+	width: 80%;
+	height: 100%;
+	background: #282828;
+	position: fixed;
+	z-index: 10;
+	top :50px;
+	left: 0;
+	transition: 0.6s;
+}
+.show{
+	left: 0px;
+}
+.menu li{
+	height: 50px;
+	padding-left: 20px;
+	line-height: 50px;
+	color: #9a9a9a;
+	font-size: 14px;
+	border-bottom: 1px solid #333;
+}
+
+.mask{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: black;
+	top:50px;
+	left: 0;
+	z-index: 8;
+	opacity: 0.5;
+}
+.hid{
+	display: block;
+}
+
+/*动画*/
+.menu-enter {
+  left: -80%;
+}
+
+.menu-enter.menu-enter-active {
+  left: 0;
+  transition: all 300ms ease-in;
+}
+
+.menu-leave {
+  left: 0;
+}
+
+.menu-leave.menu-leave-active {
+  left: -80%;
+  transition: all 300ms ease-in;
+}
+
+.mask-enter {
+  opacity: 0;
+}
+
+.mask-enter.mask-enter-active {
+  opacity: 0.5;
+  transition: all 300ms ease-in;
+}
+
+.mask-leave {
+  opacity: 0.5;
+}
+
+.mask-leave.mask-leave-active {
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
